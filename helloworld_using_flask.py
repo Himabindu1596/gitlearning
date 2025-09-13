@@ -6,5 +6,8 @@ def Hello():
 @app.route('/welcome/<name>')
 def Welcome(name):
     return f"Welcome {name}"
+@app.route('/welcome/<num>')
+def welcomenum(num):
+    return f"welcome {num}"
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port = 8800)
